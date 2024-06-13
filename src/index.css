@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+  @apply font-default text-sm;
+}
+
+.heading {
+  @apply font-heading font-bold;
+}
+
+.section-layout {
+  @apply px-10 py-20 flex flex-col items-center gap-12 lg:py-28;
+}
+
+.section-heading {
+  @apply heading text-2xl text-center uppercase border-b-2 border-black lg:text-4xl;
+}
+
+.button {
+  @apply flex gap-2 px-4 py-2 rounded-md justify-center items-center;
+}

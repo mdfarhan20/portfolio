@@ -1,5 +1,5 @@
 import { projects } from "constants";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { SiGithub as GithubIcon } from "react-icons/si";
 import { FiExternalLink as LinkIcon } from "react-icons/fi";

@@ -9,13 +9,13 @@ export default function Navbar() {
   const isMobile = useMobile();
 
   const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "100%" }
+    open: { opacity: 1, x: 0, y: "100%" },
+    closed: { opacity: 0, x: "100%", y: "100%" }
   }
 
   const backdropVariants = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 }
+    open: { opacity: 1, y: "100%" },
+    closed: { opacity: 0, y: "100%" }
   }
 
   return (
@@ -24,12 +24,12 @@ export default function Navbar() {
 
       <motion.ul 
         className="
-          fixed flex flex-col items-center bg-white h-95v -bottom-2 -right-5 gap-6
+          absolute flex flex-col items-center bg-white h-[200vh] bottom-0 right-0 gap-6
           px-10 py-16 w-1/2 z-30 sm:static sm:flex-row sm:h-fit sm:w-fit sm:p-0
         "
         initial="closed"
-        animate={ (!isMobile || isOpen) ? "open" : "closed" }
-        variants={variants}
+        animate={ (isOpen) ? "open" : "closed" }
+        variants={isMobile ? variants : {}}
       >
         { navLinks.map((link, index) => (
           <motion.li 
@@ -43,7 +43,7 @@ export default function Navbar() {
       </motion.ul>
 
       <motion.div 
-        className="absolute w-screen h-screen bg-black bg-opacity-10 top-16 left-0 sm:hidden z-20"
+        className="absolute w-screen h-[200vh] bg-black bg-opacity-10 bottom-0 left-0 sm:hidden z- pointer-events-none"
         initial="closed"
         animate={ (!isMobile || isOpen) ? "open" : "closed" }
         variants={backdropVariants}

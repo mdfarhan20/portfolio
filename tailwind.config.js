@@ -14,7 +14,7 @@ export default {
         "1": "1px"
       },
       "height": {
-        "90v": "90vh"
+        "95v": "95vh"
       },
       "backgroundImage": {
         "vignette": "radial-gradient(circle, white, hsl(5, 0%, 90%))"

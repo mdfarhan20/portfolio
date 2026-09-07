@@ -1,15 +1,15 @@
 ---
 name: Mohamed Farhan — Portfolio
-description: Blue-line drawing-sheet portfolio for a full-stack developer
+description: Ink-on-paper drawing-sheet portfolio for a full-stack developer
 colors:
   paper-wave: "#f6f4ec"
-  blueprint-muted: "#3a5aa0"
-  blueprint-line: "#1f3a8f"
-  blueprint-ink: "#0f1b3d"
-  ink-black: "#0f1b3d"
+  blueprint-muted: "#6b6f76"
+  blueprint-line: "#34343b"
+  blueprint-ink: "#17171c"
+  ink-black: "#17171c"
   amber-paper: "#c98a2b"
   amber-deep: "#a06a1c"
-  contact-ground: "#0f1b3d"
+  contact-ground: "#17171c"
   white-paper: "#ffffff"
 typography:
   display:
@@ -69,26 +69,26 @@ components:
 
 This portfolio presents a developer's work the way a production drawing set presents a product: as a precise, dimensioned, revision-stamped set of shipped builds. Every surface is a drawing sheet — title block, grid paper, part numbers, leader callouts, revision stamps — so the visitor's mental model is an engineering spec that happens to be about a person, not a résumé that happens to use nice type.
 
-The system refuses the dark-terminal developer-portfolio default outright: there is no neon-glow dark mode, no gradient hero, no metric cards. Instead it commits to a cool, quiet blue-line print world over warm-white drawing paper, with exactly one ink-black field (the contact sheet's closing nameplate) and one honey-amber accent that only ever appears as a stamp of approval. Density follows the drawing-table: annotation-heavy sections sit beside calm white passes, and the page ends on a stamped nameplate rather than a footer.
+The system refuses the dark-terminal developer-portfolio default outright: there is no neon-glow dark mode, no gradient hero, no metric cards. Instead it commits to a quiet charcoal drafting-ink world over warm-white drawing paper, with exactly one ink-black field (the contact sheet's closing nameplate) and one honey-amber accent that only ever appears as a stamp of approval. Density follows the drawing-table: annotation-heavy sections sit beside calm white passes, and the page ends on a stamped nameplate rather than a footer.
 
 **Key Characteristics:**
 - Every visual element behaves like drafting apparatus — rules measure, callouts point, stamps approve.
-- Warm paper ground with cool blue ink; amber reserved for approval only (≤5% of any surface).
+- Warm paper ground with charcoal ink; amber reserved for approval only (≤5% of any surface).
 - Square corners everywhere; depth comes from hairline borders and paper, never from shadow or lift.
 - Techno-grotesk display type with monospaced, tracked-out annotation labels.
 - Reading order is sheet-style: `Sheet 01/05` … `Sheet 05/05`, each section a ranked or numbered figure.
 
 ## Colors
 
-A cool blue-line ink on warm drawing paper, with amber reserved strictly for revision stamps and the ink-black reserved for the closing sheet. Warm and cool deliberately collide: the paper temperature keeps the clinical blue family from feeling cold.
+A charcoal drafting ink on warm drawing paper, with amber reserved strictly for revision stamps and the near-black reserved for the closing sheet. The paper's warmth quietly collides with the neutral ink so the clinical drawing language never feels cold or sterile.
 
 ### Primary
-- **Blueprint Line** (#1f3a8f): the drawing-ink color. Borders of every sheet, title-block rules, dimension lines, grid lines, hover fills, and primary-interaction ink. It is the system's voice — drab, precise, unmistakably blue-line.
-- **Blueprint Muted** (#3a5aa0): secondary annotation ink. Section captions, sheet footers, descriptive text inside cards, the nav's idle links. One step lighter than the line blue, never gray.
+- **Blueprint Line** (#34343b): the drawing-ink color. Borders of every sheet, title-block rules, dimension lines, grid lines, hover fills, and primary-interaction ink. It is the system's voice — drab, precise, unmistakably drafting ink.
+- **Blueprint Muted** (#6b6f76): secondary annotation ink. Section captions, sheet footers, descriptive text inside cards, the nav's idle links. One step lighter than the line ink, never gray.
 
 ### Secondary
 - **Honey Amber** (#c98a2b, deep #a06a1c): revision-stamp and approval ink. Only ever carries approval semantics — `Rev. A`, "Approved for inspection", "Open to work", the "Live demo" button, the stamp on each project card. Never used for body or structure.
-- **Ink Black** (#0f1b3d): the contact sheet's full-bleed ground and the darkest headline ink. Used for the final nameplate only; elsewhere headings ride on the line blue. Listed as both `ink-black` and `contact-ground`; same value.
+- **Ink Black** (#17171c): the contact sheet's full-bleed ground and the darkest headline ink. Used for the final nameplate only; elsewhere headings ride on the line ink. Listed as both `ink-black` and `contact-ground`; same value.
 
 ### Neutral
 - **Drawing Paper** (#f6f4ec): the global ground. Warm and slightly off-white, reads as paper rather than screen. Card faces sit on white-paper (#ffffff) so sheets read as separate leaves on the paper slab.
@@ -147,7 +147,7 @@ Components speak one drafting dialect: a bordered rectangle with a mono header s
 - **Live-demo variant:** the same rectangle but amber-bordered with amber text; hover fills amber. The only surface where amber borders a control.
 
 ### Navigation
-- **Style:** sticky, paper-ground, 1px blue-line bottom border, hairline logo monogram `MF.`.
+- **Style:** sticky, paper-ground, 1px charcoal bottom border, hairline logo monogram `MF.`.
 - **Links:** mono, uppercase, `01 … 05` index in line blue + a short rule that widens on hover (300ms). Idle is blueprint-muted, hover ink.
 - **Mobile:** slide-in right panel at `sm`-and-below, full-height, bordered left edge; hamburger toggle labeled "Toggle navigation".
 

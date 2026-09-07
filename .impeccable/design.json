@@ -7,19 +7,19 @@
       "blueprint-line": {
         "role": "primary",
         "displayName": "Blueprint Line",
-        "canonical": "#1f3a8f",
+        "canonical": "#34343b",
         "tonalRamp": ["#101c3d", "#182e6d", "#22429b", "#2c56c9", "#5477d9", "#829ce3", "#b3c2ea", "#dfe5f6"]
       },
       "blueprint-muted": {
         "role": "primary",
         "displayName": "Blueprint Muted",
-        "canonical": "#3a5aa0",
+        "canonical": "#6b6f76",
         "tonalRamp": ["#161f36", "#243461", "#334a8a", "#4260b3", "#6680c7", "#8fa2d6", "#bac5e3", "#e2e7f3"]
       },
       "blueprint-ink": {
         "role": "primary",
         "displayName": "Ink Black",
-        "canonical": "#0f1b3d",
+        "canonical": "#17171c",
         "tonalRamp": ["#111c3b", "#1b306a", "#264497", "#3158c4", "#5879d5", "#859de0", "#b4c2e9", "#e0e5f6"]
       },
       "amber-paper": {
@@ -49,7 +49,7 @@
       "contact-ground": {
         "role": "neutral",
         "displayName": "Contact Nameplate",
-        "canonical": "#0f1b3d",
+        "canonical": "#17171c",
         "tonalRamp": ["#111c3b", "#1b306a", "#264497", "#3158c4", "#5879d5", "#859de0", "#b4c2e9", "#e0e5f6"]
       }
     },
@@ -86,7 +86,7 @@
       "refersTo": "button-primary",
       "description": "1px blueprint-line rectangle with a mono uppercase label; inverts to blue fill on hover.",
       "html": "<button class=\"ds-btn-primary\">VIEW THE BUILDS</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border: 1px solid #1f3a8f; border-radius: 0; background: transparent; color: #0f1b3d; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: background 0.2s ease, color 0.2s ease; } .ds-btn-primary:hover { background: #1f3a8f; color: #ffffff; } .ds-btn-primary:focus-visible { outline: 2px solid #1f3a8f; outline-offset: 2px; }"
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border: 1px solid #34343b; border-radius: 0; background: transparent; color: #17171c; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; transition: background 0.2s ease, color 0.2s ease; } .ds-btn-primary:hover { background: #34343b; color: #ffffff; } .ds-btn-primary:focus-visible { outline: 2px solid #34343b; outline-offset: 2px; }"
     },
     {
       "name": "Live Demo Button",
@@ -110,7 +110,7 @@
       "refersTo": "project-sheet",
       "description": "A drawing sheet: 1px blueprint border on paper with a mono header strip and a squared image frame.",
       "html": "<article class=\"ds-sheet\"><header class=\"ds-sheet-head\"><span>DWG-01</span><span>FORMS · QUIZZES · POLLS</span></header><div class=\"ds-sheet-media\"></div><div class=\"ds-sheet-body\"><h3 class=\"ds-sheet-title\">INQUIRE</h3><p class=\"ds-sheet-text\">Platform to create and share forms, quizzes and polls with a single link.</p></div></article>",
-      "css": ".ds-sheet { display: flex; flex-direction: column; border: 1px solid #1f3a8f; border-radius: 0; background: #f6f4ec; font-family: 'Chakra Petch', system-ui, sans-serif; } .ds-sheet-head { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #1f3a8f; color: #3a5aa0; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; } .ds-sheet-head span:first-child { color: #1f3a8f; } .ds-sheet-media { margin: 12px; border: 1px solid rgba(31,58,143,0.4); aspect-ratio: 16 / 10; background: #ffffff; } .ds-sheet-body { padding: 4px 16px 16px; } .ds-sheet-title { font-size: 24px; font-weight: 700; line-height: 1.1; text-transform: uppercase; letter-spacing: -0.02em; color: #0f1b3d; margin: 0; } .ds-sheet-text { margin-top: 12px; font-size: 14px; line-height: 1.7; color: #3a5aa0; }"
+      "css": ".ds-sheet { display: flex; flex-direction: column; border: 1px solid #34343b; border-radius: 0; background: #f6f4ec; font-family: 'Chakra Petch', system-ui, sans-serif; } .ds-sheet-head { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #34343b; color: #6b6f76; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; } .ds-sheet-head span:first-child { color: #34343b; } .ds-sheet-media { margin: 12px; border: 1px solid rgba(23,23,28,0.4); aspect-ratio: 16 / 10; background: #ffffff; } .ds-sheet-body { padding: 4px 16px 16px; } .ds-sheet-title { font-size: 24px; font-weight: 700; line-height: 1.1; text-transform: uppercase; letter-spacing: -0.02em; color: #17171c; margin: 0; } .ds-sheet-text { margin-top: 12px; font-size: 14px; line-height: 1.7; color: #6b6f76; }"
     },
     {
       "name": "Dimension Line",
@@ -118,7 +118,7 @@
       "refersTo": "dimension-line",
       "description": "A measured rule with end ticks and a label, exactly like the dimension line beside a drawing.",
       "html": "<div class=\"ds-dim\"><span></span><i></i><em class=\"ds-dim-rule\"></em><b>ROLE / FULL-STACK</b><em class=\"ds-dim-rule\"></em><i></i><span></span></div>",
-      "css": ".ds-dim { display: flex; align-items: center; gap: 8px; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #3a5aa0; user-select: none; } .ds-dim span { width: 6px; height: 1px; background: #1f3a8f; } .ds-dim i { width: 1px; height: 8px; background: #1f3a8f; } .ds-dim .ds-dim-rule { flex: 1; height: 1px; background: #1f3a8f; } .ds-dim b { white-space: nowrap; font-weight: 400; }"
+      "css": ".ds-dim { display: flex; align-items: center; gap: 8px; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #6b6f76; user-select: none; } .ds-dim span { width: 6px; height: 1px; background: #34343b; } .ds-dim i { width: 1px; height: 8px; background: #34343b; } .ds-dim .ds-dim-rule { flex: 1; height: 1px; background: #34343b; } .ds-dim b { white-space: nowrap; font-weight: 400; }"
     },
     {
       "name": "Leader Callout",
@@ -126,7 +126,7 @@
       "refersTo": "callout",
       "description": "A leader line with a vertical tick pointing at a subject, with an uppercase mono label.",
       "html": "<span class=\"ds-callout\"><i></i><em></em>FRONT ELEVATION</span>",
-      "css": ".ds-callout { display: inline-flex; align-items: center; gap: 8px; color: #0f1b3d; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; } .ds-callout em { width: 20px; height: 1px; background: rgba(31,58,143,0.6); } .ds-callout i { width: 1px; height: 10px; background: rgba(31,58,143,0.6); }"
+      "css": ".ds-callout { display: inline-flex; align-items: center; gap: 8px; color: #17171c; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; } .ds-callout em { width: 20px; height: 1px; background: rgba(23,23,28,0.6); } .ds-callout i { width: 1px; height: 10px; background: rgba(23,23,28,0.6); }"
     },
     {
       "name": "Navigation Link",
@@ -134,7 +134,7 @@
       "refersTo": "nav-link",
       "description": "Mono uppercase link with a numeric index and a short rule that widens on hover.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#home\"><span>01</span><i></i>HOME</a></nav>",
-      "css": ".ds-nav { display: flex; gap: 24px; background: #f6f4ec; border-bottom: 1px solid #1f3a8f; padding: 12px 40px; } .ds-nav-link { display: inline-flex; align-items: baseline; gap: 8px; color: #3a5aa0; text-decoration: none; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.12em; transition: color 0.2s ease; } .ds-nav-link span { font-size: 10px; color: rgba(31,58,143,0.5); } .ds-nav-link i { align-self: center; width: 12px; height: 1px; background: rgba(31,58,143,0.4); transition: width 0.3s ease; } .ds-nav-link:hover { color: #0f1b3d; } .ds-nav-link:hover i { width: 24px; } .ds-nav-link:focus-visible { outline: 2px solid #1f3a8f; outline-offset: 2px; }"
+      "css": ".ds-nav { display: flex; gap: 24px; background: #f6f4ec; border-bottom: 1px solid #34343b; padding: 12px 40px; } .ds-nav-link { display: inline-flex; align-items: baseline; gap: 8px; color: #6b6f76; text-decoration: none; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.12em; transition: color 0.2s ease; } .ds-nav-link span { font-size: 10px; color: rgba(23,23,28,0.5); } .ds-nav-link i { align-self: center; width: 12px; height: 1px; background: rgba(23,23,28,0.4); transition: width 0.3s ease; } .ds-nav-link:hover { color: #17171c; } .ds-nav-link:hover i { width: 24px; } .ds-nav-link:focus-visible { outline: 2px solid #34343b; outline-offset: 2px; }"
     },
     {
       "name": "Bill-of-Materials Row",
@@ -142,15 +142,15 @@
       "refersTo": "skills-row",
       "description": "A table row with part number, description, a rating bar that fills on scroll, and a proficiency stamp.",
       "html": "<li class=\"ds-bom\"><span>P-01</span><strong>REACT</strong><span class=\"ds-bom-bar\"><i style=\"width:80%\"></i></span><em>8 / 10</em><span class=\"ds-stamp\">ADVANCED</span></li>",
-      "css": ".ds-bom { display: grid; grid-template-columns: 1.6fr 2fr 0.5fr 1fr; align-items: center; gap: 16px; padding: 16px 20px; border-bottom: 1px solid rgba(31,58,143,0.3); color: #3a5aa0; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 12px; } .ds-bom strong { font-family: 'Chakra Petch', system-ui, sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: -0.01em; color: #0f1b3d; } .ds-bom > span:first-child { color: #1f3a8f; letter-spacing: 0.15em; } .ds-bom-bar { position: relative; height: 8px; background: rgba(31,58,143,0.15); } .ds-bom-bar i { position: absolute; inset: 0 auto 0 0; background: #1f3a8f; } .ds-bom:hover { background: rgba(31,58,143,0.05); }"
+      "css": ".ds-bom { display: grid; grid-template-columns: 1.6fr 2fr 0.5fr 1fr; align-items: center; gap: 16px; padding: 16px 20px; border-bottom: 1px solid rgba(23,23,28,0.3); color: #6b6f76; font-family: 'Share Tech Mono', ui-monospace, monospace; font-size: 12px; } .ds-bom strong { font-family: 'Chakra Petch', system-ui, sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: -0.01em; color: #17171c; } .ds-bom > span:first-child { color: #34343b; letter-spacing: 0.15em; } .ds-bom-bar { position: relative; height: 8px; background: rgba(23,23,28,0.15); } .ds-bom-bar i { position: absolute; inset: 0 auto 0 0; background: #34343b; } .ds-bom:hover { background: rgba(23,23,28,0.05); }"
     }
   ],
   "narrative": {
     "northStar": "The Engineered Specification",
-    "overview": "This portfolio presents a developer's work the way a production drawing set presents a product: as a precise, dimensioned, revision-stamped set of shipped builds. Every surface is a drawing sheet — title block, grid paper, part numbers, leader callouts, revision stamps — so the visitor's mental model is an engineering spec that happens to be about a person, not a résumé that happens to use nice type. The system refuses the dark-terminal developer-portfolio default outright: no neon-glow dark mode, no gradient hero, no metric cards. Instead it commits to a cool, quiet blue-line print world over warm-white drawing paper, with exactly one ink-black field (the contact sheet's closing nameplate) and one honey-amber accent that only ever appears as a stamp of approval. Density follows the drawing table: annotation-heavy sections sit beside calm white passes, and the page ends on a stamped nameplate rather than a footer.",
+    "overview": "This portfolio presents a developer's work the way a production drawing set presents a product: as a precise, dimensioned, revision-stamped set of shipped builds. Every surface is a drawing sheet — title block, grid paper, part numbers, leader callouts, revision stamps — so the visitor's mental model is an engineering spec that happens to be about a person, not a résumé that happens to use nice type. The system refuses the dark-terminal developer-portfolio default outright: no neon-glow dark mode, no gradient hero, no metric cards. Instead it commits to a quiet charcoal drafting-ink world over warm-white drawing paper, with exactly one ink-black field (the contact sheet's closing nameplate) and one honey-amber accent that only ever appears as a stamp of approval. Density follows the drawing table: annotation-heavy sections sit beside calm white passes, and the page ends on a stamped nameplate rather than a footer.",
     "keyCharacteristics": [
       "Every visual element behaves like drafting apparatus — rules measure, callouts point, stamps approve.",
-      "Warm paper ground with cool blue ink; amber reserved for approval only (≤5% of any surface).",
+      "Warm paper ground with charcoal ink; amber reserved for approval only (≤5% of any surface).",
       "Square corners everywhere; depth comes from hairline borders and paper, never from shadow or lift.",
       "Techno-grotesk display type with monospaced, tracked-out annotation labels.",
       "Reading order is sheet-style: Sheet 01/05 … Sheet 05/05, each section a ranked or numbered figure."

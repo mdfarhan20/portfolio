@@ -19,8 +19,8 @@ body {
 .sheet {
   background-color: #f6f4ec;
   background-image:
-    linear-gradient(rgba(31,58,143,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31,58,143,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(23,23,28,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23,23,28,0.05) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
@@ -47,12 +47,14 @@ body {
   @apply font-mono text-blueprint-line;
 }
 
-.button {
-  @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wide border-1 border-blueprint-line text-blueprint-ink transition-colors duration-200;
-}
+@layer components {
+  .button {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wide border-1 border-blueprint-line text-blueprint-ink transition-colors duration-200;
+  }
 
-.button:hover {
-  @apply bg-blueprint-line text-white;
+  .button:hover {
+    @apply bg-blueprint-line text-white;
+  }
 }
 
 /* registration corner marks for drawing sheets */
@@ -63,6 +65,6 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(31,58,143,0.28);
+  border: 1px solid rgba(23,23,28,0.28);
   clip-path: polygon(0 0, 0 14px, 14px 0);
 }

@@ -18,9 +18,9 @@ export default function Home() {
         >
           {/* sheet margin title block header */}
           <div className="flex items-center justify-between border-b-1 border-blueprint-line px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">
-            <span>Drawing title block</span>
-            <span className="hidden sm:inline">Rev. A</span>
-            <span>Scale — printable</span>
+            <span>index.html</span>
+            <span className="hidden sm:inline">v2.0.0</span>
+            <span>production build</span>
           </div>
 
           <div className="relative grid gap-6 p-6 sm:p-10 lg:grid-cols-[1.35fr_1fr] lg:gap-12 lg:items-center">
@@ -80,8 +80,8 @@ export default function Home() {
 
           {/* bottom title-block strip */}
           <div className="flex flex-wrap items-center justify-between gap-2 border-t-1 border-blueprint-line px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">
-            <span>Rev. A — 2026</span>
-            <span className="flex items-center gap-2"><span className="inline-block w-px h-3 bg-blueprint-line/40" />Breadth: React · Node · Go · LLM apps</span>
+            <span>v2.0.0 — 2026</span>
+            <span className="flex items-center gap-2"><span className="inline-block w-px h-3 bg-blueprint-line/40" />React · Node · Go · LLM apps</span>
           </div>
         </motion.div>
       </div>

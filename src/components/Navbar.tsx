@@ -10,7 +10,6 @@ export default function Navbar() {
       <div className="relative flex items-center justify-between px-5 sm:px-10 py-3">
         <a href="#home" className="flex items-baseline gap-2 hover:opacity-80">
           <span className="heading text-lg sm:text-xl tracking-tight">MF.</span>
-          <span className="hidden sm:inline font-mono text-[10px] text-blueprint-muted uppercase tracking-widest">spec no. 201103</span>
         </a>
 
         <ul

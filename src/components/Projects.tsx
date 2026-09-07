@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl">
         <div className="flex items-end justify-between mb-3">
           <h2 className="section-heading">Projects</h2>
-          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">Sheet 03 / 05</span>
+          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">03 · projects</span>
         </div>
         <DrawRule className="mb-2" />
         <p className="font-mono text-xs uppercase tracking-widest text-blueprint-muted mb-12">Six shipped builds — each with live demo and source</p>
@@ -52,7 +52,7 @@ function ProjectCard({
     >
       {/* part number / header strip */}
       <div className="flex items-center justify-between border-b-1 border-blueprint-line px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">
-        <span className="text-blueprint-line">DWG-{(index + 1).toString().padStart(2, "0")}</span>
+        <span className="text-blueprint-line">REPO-{(index + 1).toString().padStart(2, "0")}</span>
         <span className="text-right">{CATEGORY[title] ?? "Web build"}</span>
       </div>
 
@@ -70,7 +70,7 @@ function ProjectCard({
       <div className="px-4 pb-4 flex flex-col grow">
         <div className="flex items-center justify-between gap-3 mt-1">
           <h3 className="heading text-2xl uppercase tracking-tight">{ title }</h3>
-          <Stamp>Rev. A</Stamp>
+          <Stamp>Shipped</Stamp>
         </div>
 
         <p className="mt-3 text-sm leading-relaxed text-blueprint-muted grow">

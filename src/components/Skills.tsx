@@ -9,16 +9,16 @@ export default function Skills() {
       <div className="mx-auto max-w-6xl">
         <div className="flex items-end justify-between mb-3">
           <h2 className="section-heading">Skills</h2>
-          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">Sheet 04 / 05</span>
+          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">04 · skills</span>
         </div>
         <DrawRule className="mb-2" />
-        <p className="font-mono text-xs uppercase tracking-widest text-blueprint-muted mb-12">Bill of materials — rated by working proficiency</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-blueprint-muted mb-12">Core stack — rated by hands-on depth</p>
 
         <div className="border-1 border-blueprint-line bg-white/60">
           {/* table header */}
           <div className="hidden sm:grid grid-cols-[1.6fr_2fr_0.5fr_1fr] gap-4 border-b-1 border-blueprint-line px-5 py-3 font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">
-            <span>Part no.</span>
-            <span>Description</span>
+            <span>#</span>
+            <span>Skill</span>
             <span>Rating</span>
             <span>Proficiency</span>
           </div>
@@ -46,10 +46,10 @@ function SkillRow({ skill, index }: { skill: SkillType; index: number }) {
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4, delay: 0.04 * index }}
     >
-      {/* Part no. */}
-      <span className="font-mono text-xs tracking-widest text-blueprint-line">P-{(index + 1).toString().padStart(2, "0")}</span>
+      {/* # */}
+      <span className="font-mono text-xs tracking-widest text-blueprint-line">#{(index + 1).toString().padStart(2, "0")}</span>
 
-      {/* Description */}
+      {/* Skill */}
       <div className="flex items-center gap-3 sm:col-start-2">
         <skill.logo className="size-5 text-blueprint-line shrink-0" />
         <span className="heading text-base">{skill.name}</span>

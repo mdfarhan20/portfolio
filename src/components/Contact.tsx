@@ -10,10 +10,10 @@ export default function Contact() {
       <div className="relative mx-auto max-w-6xl">
         <div className="flex items-end justify-between mb-3">
           <h2 className="section-heading !text-white">Contact</h2>
-          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-white/50">Sheet 05 / 05</span>
+          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-white/50">05 · contact</span>
         </div>
         <DrawRule className="mb-2 bg-amber-paper" />
-        <p className="font-mono text-xs uppercase tracking-widest text-white/50 mb-12">Approval stamp — review, then reach out</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-white/50 mb-12">Endpoints live — pick a channel below</p>
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_1.4fr] items-start">
           {/* appeal */}
@@ -27,7 +27,7 @@ export default function Contact() {
             <div className="flex items-center gap-3">
               <span className="text-[7rem] leading-none font-bold text-amber-paper">MF.</span>
               <div className="font-mono text-[10px] uppercase tracking-widest text-white/60 leading-relaxed">
-                <p>Approved for<br />inspection</p>
+                <p>Software<br />Developer</p>
               </div>
             </div>
             <h3 className="mt-6 text-xl sm:text-2xl font-bold leading-snug">
@@ -38,8 +38,8 @@ export default function Contact() {
               ideas, or collaboration. I typically respond quickly.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <Stamp className="text-white/80 border-white/60">Say hello</Stamp>
-              <Stamp className="text-white/80 border-white/60">Reply fast</Stamp>
+              <Stamp className="text-white/80 border-white/60">Say Hello</Stamp>
+              <Stamp className="text-white/80 border-white/60">Let's connect</Stamp>
             </div>
           </motion.div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
 
         <div className="mt-14 flex flex-wrap items-center justify-between gap-3 border-t-1 border-white/20 pt-4 font-mono text-[10px] uppercase tracking-widest text-white/40">
           <span>Mohamed Farhan — spec no. 201103</span>
-          <span>Rev. A — 2026</span>
+          <span>v2.0.0 — 2026</span>
         </div>
       </div>
     </section>

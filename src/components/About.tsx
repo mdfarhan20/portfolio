@@ -8,7 +8,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl">
         <div className="flex items-end justify-between mb-3">
           <h2 className="section-heading">About me</h2>
-          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">Sheet 02 / 05</span>
+          <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-blueprint-muted">02 · about</span>
         </div>
         <DrawRule className="mb-12" />
 

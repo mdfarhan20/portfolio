@@ -10,7 +10,7 @@ const CATEGORY: Record<string, string> = {
   "Spyfall": "Online party game",
   "SortViz": "Algorithm visualizer",
   "Wordle": "Word game",
-  "Music Player": "Audio player",
+  "Connect Four": "Go AI · WASM",
 };
 
 export default function Projects() {
@@ -61,7 +61,7 @@ function ProjectCard({
         <img
           src={image}
           alt={`${title} — project screenshot`}
-          className="w-full object-cover aspect-[16/10] group-hover:scale-[1.03] transition-transform duration-700"
+          className="w-full group-hover:scale-[1.03] transition-transform duration-700"
         />
         <span className="absolute top-0 left-0 w-4 h-4 border-t-1 border-l-1 border-white/70" />
         <span className="absolute bottom-0 right-0 w-4 h-4 border-b-1 border-r-1 border-white/70" />

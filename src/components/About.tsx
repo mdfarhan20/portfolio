@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import photo from "assets/about-photo.jpg";
-import { DrawRule, Stamp, Callout } from "components/Blue";
+import { DrawRule } from "components/Blue";
 
 export default function About() {
   return (
@@ -21,22 +21,11 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-blueprint-muted mb-2">
-              <span>Fig. 01 — Developer</span>
-              <span>NTS</span>
-            </div>
             <img
               src={photo}
               alt="Portrait of Mohamed Farhan"
               className="w-full object-cover aspect-square border-1 border-blueprint-line/40"
             />
-            <div className="flex justify-between mt-2 pt-1 border-t-1 border-blueprint-line/40">
-              <Stamp>Field note</Stamp>
-              <span className="font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">Not to scale</span>
-            </div>
-            <span className="absolute -left-5 top-1/2 hidden lg:flex -translate-x-full">
-              <Callout align="right">Detail A</Callout>
-            </span>
           </motion.figure>
 
           {/* bio annotation */}
@@ -48,19 +37,18 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
-              A recent Computer Science graduate aiming to work as a web developer. Over the
-              last few years I have focused on the skills behind full-stack web applications,
-              learning largely hands-on and by building real projects — alongside structured
-              courses such as Harvard&rsquo;s CS50x, Backend Application Development from
-              EdX, and an introduction to programming in C from NPTEL.
+              A full-stack developer building web products end to end — React on the
+              front, Node and Go on the back, with LLM-backed tooling increasingly
+              in the mix. I learn by shipping real, working builds, and I keep the
+              code clean and readable.
             </motion.p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                { k: "Approach", v: "Learn fast, build real, keep code clean and readable." },
-                { k: "Discipline", v: "Hands-on execution across real-time apps, tools, and games." },
-                { k: "Foundation", v: "Computer Science — algorithms, data structures, C and Python." },
-                { k: "Focus", v: "Full-stack web with React, Node, Express, and Next.js." },
+                { k: "Approach", v: "Learn by building. Ship real, working software and keep the code readable." },
+                { k: "Now", v: "Currently exploring Go, distributed systems, and LLM-backed tooling." },
+                { k: "Foundation", v: "Computer Science — algorithms, data structures, and systems programming in C." },
+                { k: "Focus", v: "Full-stack web with React, Node, Go, and LLM apps." },
               ].map((row, i) => (
                 <motion.div
                   key={row.k}

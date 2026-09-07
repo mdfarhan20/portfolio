@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import photoMobile from "assets/photo-mobile.jpeg";
-import photoDesktop from "assets/photo-desktop.png";
-import { RegistrationCorners, Callout, DimensionLine } from "components/Blue";
+import profilePhoto from "assets/profile-photo.jpeg";
+import { RegistrationCorners, DimensionLine } from "components/Blue";
 
 export default function Home() {
   return (
@@ -27,18 +26,8 @@ export default function Home() {
           <div className="relative grid gap-6 p-6 sm:p-10 lg:grid-cols-[1.35fr_1fr] lg:gap-12 lg:items-center">
             {/* text side */}
             <div className="relative">
-              <Callout delay={0.1} className="mb-4 lg:hidden">Front elevation</Callout>
-              <motion.p
-                className="font-mono text-xs uppercase tracking-[0.3em] text-blueprint-muted"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-              >
-                Subject 001 — Web Developer
-              </motion.p>
-
               <motion.h1
-                className="heading text-[13.5vw] leading-[0.92] sm:text-7xl lg:text-[5.2rem] uppercase mt-3"
+                className="heading text-[13.5vw] leading-[0.92] sm:text-7xl lg:text-[5.2rem] uppercase mt-3 lg:mt-0"
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -53,9 +42,9 @@ export default function Home() {
               >
                 <DimensionLine label="role / full-stack" className="mb-4" />
                 <p className="text-blueprint-muted leading-relaxed">
-                  A full-stack developer who ships real, working builds across the stack —
-                  chat apps, tools, data visualizations, and games — with a Computer
-                  Science foundation and clean, readable code.
+                  A full-stack developer shipping real, working builds across the
+                  stack &mdash; real-time apps, Go systems, and LLM-backed tooling &mdash;
+                  with a Computer Science foundation and clean, readable code.
                 </p>
               </motion.div>
 
@@ -74,33 +63,25 @@ export default function Home() {
 
             {/* portrait side */}
             <div className="relative">
-              <motion.picture
-                className="block border-1 border-blueprint-line bg-white"
+              <motion.div
+                className="border-1 border-blueprint-line bg-white"
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               >
-                <source media="(width > 1024px)" srcSet={photoDesktop} />
                 <img
-                  src={photoMobile}
+                  src={profilePhoto}
                   alt="Portrait of Mohamed Farhan"
-                  className="w-full object-cover aspect-[4/5] lg:aspect-[3/4]"
+                  className="w-full object-cover aspect-square"
                 />
-              </motion.picture>
-
-              <div className="absolute -top-2 -left-2 hidden lg:flex items-center gap-2">
-                <Callout>Front elevation</Callout>
-              </div>
-              <div className="absolute -bottom-2 right-0 hidden lg:flex items-center gap-2 flex-row-reverse justify-end">
-                <Callout align="right" delay={0.2}>Subject 001</Callout>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           {/* bottom title-block strip */}
           <div className="flex flex-wrap items-center justify-between gap-2 border-t-1 border-blueprint-line px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-blueprint-muted">
             <span>Rev. A — 2026</span>
-            <span className="flex items-center gap-2"><span className="inline-block w-px h-3 bg-blueprint-line/40" />Breadth: React · Node · Express · Next.js</span>
+            <span className="flex items-center gap-2"><span className="inline-block w-px h-3 bg-blueprint-line/40" />Breadth: React · Node · Go · LLM apps</span>
           </div>
         </motion.div>
       </div>

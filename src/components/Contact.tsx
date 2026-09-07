@@ -31,14 +31,14 @@ export default function Contact() {
               </div>
             </div>
             <h3 className="mt-6 text-xl sm:text-2xl font-bold leading-snug">
-              Have a role or a project that needs a developer who ships? Let&rsquo;s talk.
+              Have a question, an idea, or a project in mind? Let&rsquo;s talk.
             </h3>
             <p className="mt-4 text-white/70 leading-relaxed text-sm">
-              Open to full-stack web development roles and freelance work. Reach out
-              through any channel below — I typically respond quickly.
+              Reach out through any channel below for anything &mdash; questions,
+              ideas, or collaboration. I typically respond quickly.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <Stamp className="text-white/80 border-white/60">Open to work</Stamp>
+              <Stamp className="text-white/80 border-white/60">Say hello</Stamp>
               <Stamp className="text-white/80 border-white/60">Reply fast</Stamp>
             </div>
           </motion.div>

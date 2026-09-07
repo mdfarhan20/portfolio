@@ -6,19 +6,31 @@ export default {
   ],
   theme: {
     fontFamily: {
-      "default": ["Noto Serif", "serif"],
-      "heading": ["Libre Baskerville", "serif"]
+      "tech": ["Chakra Petch", "system-ui", "sans-serif"],
+      "mono": ["Share Tech Mono", "ui-monospace", "monospace"],
     },
     extend: {
-      "borderWidth": {
+      colors: {
+        blueprint: {
+          muted: "#6b6f76",
+          line: "#34343b",
+          ink: "#17171c",
+        },
+        amber: {
+          paper: "#c98a2b",
+          deep: "#a06a1c",
+        },
+        paper: "#f6f4ec",
+      },
+      borderWidth: {
         "1": "1px"
       },
-      "height": {
-        "95v": "95vh"
+      boxShadow: {
+        "sheet": "0 1px 0 0 rgba(23,23,28,0.12), 0 2px 0 0 rgba(23,23,28,0.05)"
       },
-      "backgroundImage": {
-        "vignette": "radial-gradient(circle, white, hsl(5, 0%, 90%))"
-      }
+      backgroundImage: {
+        "paper-grid": "linear-gradient(rgba(23,23,28,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(23,23,28,0.045) 1px, transparent 1px)"
+      },
     },
   },
   plugins: [],

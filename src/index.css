@@ -4,21 +4,67 @@
 
 :root {
   scroll-behavior: smooth;
-  @apply font-default text-sm;
+  @apply font-tech text-[15px] text-blueprint-ink bg-paper;
+}
+
+::selection {
+  @apply bg-blueprint-line text-white;
+}
+
+body {
+  @apply bg-paper;
+}
+
+/* blueprint sheet grid backdrop */
+.sheet {
+  background-color: #f6f4ec;
+  background-image:
+    linear-gradient(rgba(23,23,28,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23,23,28,0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .heading {
-  @apply font-heading font-bold;
-}
-
-.section-layout {
-  @apply px-10 py-20 flex flex-col items-center gap-12 lg:py-28;
+  @apply font-tech font-bold tracking-tight text-blueprint-ink;
 }
 
 .section-heading {
-  @apply heading text-2xl text-center uppercase border-b-2 border-black lg:text-4xl;
+  @apply heading text-3xl sm:text-4xl lg:text-5xl uppercase;
 }
 
-.button {
-  @apply flex gap-2 px-4 py-2 rounded-md justify-center items-center;
+/* title-block style section label strip */
+.label-strip {
+  @apply inline-flex items-center gap-3 font-mono text-xs tracking-widest uppercase text-blueprint-line;
+}
+
+.label-strip::before {
+  content: "";
+  @apply inline-block h-px w-8 bg-blueprint-line;
+}
+
+/* dimension line utility */
+.dim {
+  @apply font-mono text-blueprint-line;
+}
+
+@layer components {
+  .button {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wide border-1 border-blueprint-line text-blueprint-ink transition-colors duration-200;
+  }
+
+  .button:hover {
+    @apply bg-blueprint-line text-white;
+  }
+}
+
+/* registration corner marks for drawing sheets */
+.reg-corner {
+  position: relative;
+}
+.reg-corner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(23,23,28,0.28);
+  clip-path: polygon(0 0, 0 14px, 14px 0);
 }

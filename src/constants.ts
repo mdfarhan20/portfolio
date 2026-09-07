@@ -5,7 +5,7 @@ import projectConfab from "assets/project-confab.jpg";
 import projectSortviz from "assets/project-sortviz.jpg";
 import projectSpyfall from "assets/project-spyfall.jpg";
 import projectWordle from "assets/project-wordle.jpg";
-import projectMusic from "assets/project-music.jpg";
+import projectConnectFour from "assets/project-connect-four.jpg";
 
 import { 
   FaReact as ReactIcon,
@@ -18,11 +18,15 @@ import {
   SiExpress as ExpressIcon,
   SiVercel as NextIcon,
   SiTypescript as TypescriptIcon,
-  SiSqlite as SQLIcon,
+  SiMongodb as MongoIcon,
   SiTailwindcss as TailwindIcon,
   SiJavascript as JavaScriptIcon,
   SiCss3 as CSSIcon,
-  SiCompilerexplorer as CIcon,
+  SiGo as GoIcon,
+  SiWebassembly as WasmIcon,
+  SiSocketdotio as SocketIcon,
+  SiPrisma as PrismaIcon,
+  SiPostgresql as PostgresIcon,
   SiGithub as GitHubIcon,
   SiLeetcode as LeetcodeIcon
 } from "react-icons/si";
@@ -63,17 +67,17 @@ export const projects: Project[] = [
   },
   {
     title: "Wordle",
-    description: "This is a recreation of the game wordle where the player attempts to guess a random word within six tries",
+    description: "A recreation of the game wordle where the player attempts to guess a random word within six tries",
     image: projectWordle,
     liveURL: "https://mdfarhan20.github.io/wordle-game/",
     code: "https://github.com/mdfarhan20/wordle-game"
   },
   {
-    title: "Music Player",
-    description: "This is a simple Music Player built using React.js with all the basic controls of a music player such as play/pause and next/previous track",
-    image: projectMusic,
-    liveURL: "https://mdfarhan20.github.io/music-player/",
-    code: "https://github.com/mdfarhan20/music-player"
+    title: "Connect Four",
+    description: "A Connect Four game with an AI opponent. The minimax bot with alpha-beta pruning runs as a Go WebAssembly module wired into a React UI over a Web Worker.",
+    image: projectConnectFour,
+    liveURL: "https://mdfarhan20.github.io/connect-four/",
+    code: "https://github.com/mdfarhan20/connect-four"
   },
 ];
 
@@ -81,37 +85,62 @@ export const skills: Skill[] = [
   {
     name: "React",
     logo: ReactIcon,
-    level: 8,
+    level: 7,
+  },
+  {
+    name: "TypeScript",
+    logo: TypescriptIcon,
+    level: 6,
+  },
+  {
+    name: "Go",
+    logo: GoIcon,
+    level: 6,
   },
   {
     name: "Node.js",
     logo: NodeIcon,
-    level: 7
+    level: 6
   },
   {
     name: "Express.js",
     logo: ExpressIcon,
-    level: 7
+    level: 6
   },
   {
     name: "Next.js",
     logo: NextIcon,
+    level: 5
+  },
+  {
+    name: "Prisma",
+    logo: PrismaIcon,
+    level: 5
+  },
+  {
+    name: "PostgreSQL",
+    logo: PostgresIcon,
+    level: 4
+  },
+  {
+    name: "MongoDB",
+    logo: MongoIcon,
+    level: 5
+  },
+  {
+    name: "WebAssembly",
+    logo: WasmIcon,
+    level: 4
+  },
+  {
+    name: "Socket.io",
+    logo: SocketIcon,
     level: 6
-  },
-  {
-    name: "Typescript",
-    logo: TypescriptIcon,
-    level: 5,
-  },
-  {
-    name: "SQL",
-    logo: SQLIcon,
-    level: 5,
   },
   {
     name: "Tailwind CSS",
     logo: TailwindIcon,
-    level: 5
+    level: 6
   },
   {
     name: "JavaScript",
@@ -121,7 +150,7 @@ export const skills: Skill[] = [
   {
     name: "Python",
     logo: PythonIcon,
-    level: 5
+    level: 4
   },
   {
     name: "HTML",
@@ -133,11 +162,6 @@ export const skills: Skill[] = [
     logo: CSSIcon,
     level: 7
   },
-  {
-    name: "C",
-    logo: CIcon,
-    level: 4
-  }
 ];
 
 export const contactLinks: Contact[] = [
